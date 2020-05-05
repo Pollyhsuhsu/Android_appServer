@@ -11,8 +11,15 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "buffer": "^5.6.0",
     "crypto": "^1.0.1",
     "cryptr": "^6.0.2",
-    "express": "^4.17.1"
+    "dns": "^0.2.2",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "hostbyname": "^0.1.0",
+    "mime": "^2.4.4",
+    "mysql": "^2.18.1",
+    "os": "^0.1.1"
   }
 }

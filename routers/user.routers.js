@@ -10,7 +10,7 @@ module.exports = app => {
     app.get("/customers", users.findAll);
   
     // Retrieve a single Customer with customerId
-    ///app.get("/customers/:customerId", customers.findOne);
+    app.get("/customers/querybyId/:user_id", users.findOne);
   
     // Update a Customer with customerId
     //app.put("/customers/:customerId", customers.update);

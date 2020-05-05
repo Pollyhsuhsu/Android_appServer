@@ -30,11 +30,9 @@ module.exports.register = function(req,res){
 }
 
 module.exports.authenticate = function(req,res){
-    console.log(req.body);
     var email=req.body.email;
     var password=req.body.password;
-   
-   
+  
     connection.query('SELECT * FROM users WHERE email = ?',[email], function (error, results, fields) {
       if (error) {
           res.json({
@@ -47,6 +45,7 @@ module.exports.authenticate = function(req,res){
          decryptedString = cryptr.decrypt(results[0].password);
             if(password == decryptedString){
                 res.json({
+                    data:results[0],
                     status:true,
                     message:'successfully authenticated'
                 })
