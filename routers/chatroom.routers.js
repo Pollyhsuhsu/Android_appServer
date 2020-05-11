@@ -11,8 +11,10 @@ module.exports = app => {
     // Retrieve a single Chat room with chatroomID
     app.get("/chatrooms/querybyId/:chatroom_id", chatroom.findOne);
   
+    
+
     // Update a Customer with customerId
-    //app.put("/customers/:customerId", customers.update);
+    //app.put("/chatrooms/:user_id", chatroom.findByUserId);
   
     // Delete a Customer with customerId
     //app.delete("/customers/:customerId", customers.delete);

@@ -25,7 +25,7 @@ module.exports.nychatroom = function(req,res){
           })
       }else{
             res.json({
-                status:false,    
+              status:false,    
               message:"chatroom does not exits"
             });
           }

@@ -4,4 +4,4 @@ module.exports = app => {
     // Retrieve nearby Chatroom
     app.get("/nearby/nychatroom/:lat&:lng&:dis", nearby.nychatroom);
 
-  };
+};

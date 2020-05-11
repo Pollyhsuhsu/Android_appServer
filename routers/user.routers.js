@@ -13,7 +13,7 @@ module.exports = app => {
     app.get("/customers/querybyId/:user_id", users.findOne);
   
     // Update a Customer with customerId
-    //app.put("/customers/:customerId", customers.update);
+    app.put("/customers/update", users.update);
   
     // Delete a Customer with customerId
     //app.delete("/customers/:customerId", customers.delete);

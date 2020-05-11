@@ -1,8 +1,6 @@
 var os = require("os");
 var express=require("express");
 var fs = require('fs');
-var dns = require('dns');
-var os = require('os');
 var connection = require("../db/db.connection");
 
 
@@ -92,3 +90,4 @@ module.exports.findOne = function(req,res){
       }
   });
 }
+
